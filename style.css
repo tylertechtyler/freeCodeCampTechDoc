@@ -1,0 +1,26 @@
+#navbar {
+    position: fixed;
+}
+#navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 325px;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+}

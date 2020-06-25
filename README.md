@@ -1,1 +1,1 @@
-This is my attempt at the technical documentation project for free code camp. I think I will make it technical documentation for html, or css, or github, or some basic thing I have learned so far, so that I may reinforce my own learning.
+This is my attempt at the technical documentation project for free code camp. This is a site going over the basics of HTML. I think it is something I know well enough at this point to be able to teach it. Teaching something is also a great way of learning more about it as well, so it is a WIN-WIN for everyone involved. Enjoy!
