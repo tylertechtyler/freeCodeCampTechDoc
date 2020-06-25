@@ -1,0 +1,1 @@
+This is my attempt at the technical documentation project for free code camp. I think I will make it technical documentation for html, or css, or github, or some basic thing I have learned so far, so that I may reinforce my own learning.
