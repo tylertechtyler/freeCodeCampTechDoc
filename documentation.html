@@ -20,6 +20,7 @@
                 <li><a class="nav-link" href="#Making_Links">Making Links</a></li>
                 <li><a class="nav-link" href="#Making_Lists">Making Lists</a></li>
                 <li><a class="nav-link" href="#Forms_and_Fields">Forms and Fields</a></li>
+                <li><a class="nav-link" href="#Keep_Learning">Keep Learning</a></li>
             </ul>
     </nav>
 
@@ -35,66 +36,168 @@
     <section class="main-section" id="Page_Elements">
         <header>Page Elements</header>
         <article>
-            <p>The most important part of the modern website is it's basic structure. All pages made with HTML will share the same universal skeleton underneath.</p>
-            <p></p>
+            <p>The most important part of the modern website is it's basic structure. All HTML files will start with the declaration of the document type (shown in all caps). All pages made with HTML will also share the same universal skeleton underneath. These basic elements are listed here:</p>
+            <li>html</li>
+            <li>head</li>
+            <li>body</li>
+            <p>You will also have some structural elements used for dividing up different areas of the page. They are listed as follows:</p>
+            <li>header</li>
+            <li>footer</li>
+            <li>aside</li>
+            <li>article</li>
+            <li>section</li>
+            <p>Below you will see what this html code looks like in its most basic state with the construction of the head and body tags:</p>
             <code>
                 &lt;!DOCTYPE HTML5&gt;
                 &lt;html&gt;
                     &lt;head&gt;
-                        &lt;title&gt;My First Website&lt;/title&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                        &lt;p&gt;Hello World!&lt;/p&gt;
+                        &lt;section&gt;
+                        &lt;header&gt;&lt;/header&gt;
+                                &lt;article&gt;
+                                &lt;/article&gt;
+                        &lt;/section&gt;
+                        &lt;footer&gt;
+                        &lt;/footer&gt;
                     &lt;/body&gt;
                 &lt;html&gt;
-                    
             </code>
         </article>
     </section>
-
+ <br>
     <section class="main-section" id="Text_Elements">
         <header>Text Elements</header>
         <article>
-            <p></p>
+            <p>Text elements are the elements that control the way the clearly visible text looks like. These are used to determine the level of importance of text, such as if it is a title, caption, or just a paragraph. You can also specify if you are making bold or italic text. Always remember to use the appropriate tags for your text. You will want to start with making text for your titles and headings. There are six levels of text for headers. Each one will be a different size. They are listed below:</p>
+            <li>h1</li>
+            <li>h2</li>
+            <li>h3</li>
+            <li>h4</li>
+            <li>h5</li>
+            <li>h6</li>
+            <p>To make normal text that one would find in a paragraph, you would just use the &lt;p&gt; tag. You can make an element of text bold by surrounding it with the &lt;strong&gt; tag or italic by surrounding it with the &lt;em&gt; tag. Check out the code snippet below to see how you would do this.</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;This is the Header!&lt;/h1&gt;
+                        &lt;p&gt;This is the paragraph&lt;/p&gt;
+                        &lt;p&gt;&lt;strong&gt;This text will be BOLD!&lt;/strong&gt;&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;html&gt;
+            </code>
         </article>
     </section>
-
+<br>
     <section class="main-section" id="Commenting">
         <header>Commenting</header>
         <article>
-            <p></p>
+            <p>A very important part of html is the ability to write in comments about your code that aren't part of the actual page and won't show up in the browser. A great way to do this is with the built in feature of the html comment. Making comments is very simple.</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;!--Just put the arrow with an exclamation mark followed by two dashes like this--&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
         </article>
     </section>
-
+<br>
     <section class="main-section" id="Image_and_Video">
         <header>Image and Video</header>
         <article>
-            <p></p>
+            <p>What would the modern internet be without images and videos? Nothing but text! When you want to add some multimedia excitement to your webpage, all you need to do is link an image or video with the following tags:</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;img src="put-a-link-to-your-image-file-here"&gt;
+                        &lt;iframe src="put-a-link-to-your-video-file-here"&gt;&lt;/iframe&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+            <p>The great thing about the &lt;img&gt; tag is that it is self closing. The &lt;iframe tag&gt; however, still needs to be closed. You can also set the size of these elements by putting "width=" and "height=" and then the dimensions you want in pixels in quotation marks.</p>
         </article>
     </section>
-
+<br>
     <section class="main-section" id="Making_Links">
         <header>Making Links</header>
         <article>
-            <p></p>
+            <p>Being able to link to other webpages is a very useful part of html. To make a link you use the &gt;a&gt; tag. The most important part to remember is the href attribute, which points to the source of the link. Links will appear blue and underline by default, and then they will turn purple when they have been visited.</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;a href="this-is-where-you-put-the-url-of-the-site-that-your-link-goes-to"&lt;/a&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
         </article>
     </section>
-
+<br>
     <section class="main-section" id="Making_Lists">
         <header>Making Lists</header>
         <article>
-            <p></p>
+            <p>You may find yourself wanting to make lists on your webpage at some point. Html has the ability to make these lists, either with bullet points or numbers. In order to make a list you would use the &lt;li&gt; tag. To specify whether it is bulleted or numbered you would use the &lt;ul&gt; meaning "unordered list" or the &lt;ol&gt; tag meaning "ordered list". Lists also come in handy for making menu and navigation bars.</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+
+                        &lt;ol&gt;
+                            &lt;li&gt;Item one&lt;/li&gt;
+                            &lt;li&gt;Item two&lt;/li&gt;
+                            &lt;li&gt;Item three&lt;/li&gt;
+                        &lt;/ol&gt;
+                        
+                        &lt;ul&gt;
+                            &lt;li&gt;Something&lt;/li&gt;
+                            &lt;li&gt;Anything&lt;/li&gt;
+                            &lt;li&gt;This thing&lt;/li&gt;
+
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
         </article>
     </section>
-
+<br>
     <section class="main-section" id="Forms_and_Fields">
         <header>Forms and Fields</header>
         <article>
-            <p></p>
+            <p>The ability to add forms is one of html's most useful features. A form will display areas on a webpage where a user can input information. This is very important, especially if you want your site to collect information from a visitor such as a name or email address. There are many possible form elements that one can put into the &lt;form&gt; tag. Some of them are listed below:</p>
+            <li>input</li>
+            <li>textarea</li>
+            <li>button</li>
+            <li>select</li>
+            <li>option</li>
+            <li>label</li>
+            <li>output</li>
+            <p>Have a look at the code snippet below to see how you would go about creating a basic form.</p>
+            <code>
+                &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;form&gt;
+                            &lt;label&gt;Name&lt;/label&gt;
+                                &lt;input type="text"&gt;
+                            &lt;label&gt;Email&lt;/label&gt;
+                                &lt;input type="email"&gt;
+                            &lt;button type="submit"&gt;Submit!&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </article>
+    </section>
+<br>
+    <section class="main-section" id="Keep_Learning">
+        <header>Keep Learning</header>
+        <article>
+            <p>Html is a broad topic and something that you will come to know very well over the course of your web-development adventures. There are many sources out there to keep learning more information and improving your skills. Here are some of the best:</p>
+            <li><a href="https://www.w3schools.com/html/">w3schools.com</a></li>
+            <li><a href="https://www.learn-html.org/">Learn-html.org</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-html">Codeacademy.com</a></li>
         </article>
     </section>
 
     </main>
+  
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
